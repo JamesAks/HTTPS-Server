@@ -1,7 +1,6 @@
 
-#define LinkedList_c
-
 #include <stdio.h>
+#include <stdlib.h>
 #include "Node.h"
 
 struct LinkedList
@@ -13,13 +12,19 @@ struct LinkedList
     int length;
     struct Node* head;
 
-    void (*insert)(void*, int, struct LinkedList);
-    void (*remove)(int, struct LinkedList);
-    void (*getData)(void*, int, struct LinkedList);
+    void (*insert)(void*, int, struct LinkedList*);
+    void (*removeNode)(int, struct LinkedList*);
+    void* (*getData)(int, struct LinkedList*);
 
 };
 
+// A LinkedList struct is always returned therefore its stack allocated
 struct LinkedList LLConstructor();
+
+// Allows for stack and heap allocation
+void linkedListInit(struct LinkedList*);
+
+
 
 
 

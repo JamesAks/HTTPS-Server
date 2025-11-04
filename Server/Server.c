@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <WinSock2.h>
-
 #include "Server.h"
 
 struct Server serv_constructor(int domain, int service, int protocol, int port, void (* launch)(void))

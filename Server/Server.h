@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <WinSock2.h>
 
-
 struct Server{
 
     int domain;

@@ -23,7 +23,22 @@ Steps:
 
 Structure:
 
+HTTPS-Server
+    |
+    ├── DataStructures
+    |   ├── List
+    |       ├──LinkedList.c
+    |       ├──LinkedList.h
+    |       ├──Nodes.c
+    |       ├──Nodes.h
+    | 
+    ├── Server
+    |   ├── Server.c
+    |   ├── Server.h
+    |
 
+
+4
 
 Learning Resources:
 

@@ -416,3 +416,7 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+a.exe
+.vscode/tasks.json
+Tests/LinkedListTest.c
+Tests/LinkedListTest.h
