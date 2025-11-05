@@ -1,7 +1,6 @@
 #include "LinkedList.h"
 
 struct Node* createNode(void*);
-void destroyNode(struct Node*);
 struct Node* iter(int, struct LinkedList*);
 void insert(void*, int, struct LinkedList*);
 void removeNode(int, struct LinkedList*);
@@ -38,21 +37,14 @@ void linkedListInit(struct LinkedList* linked_list){
 struct Node* createNode(void* data){
 
     // Allocating memory and memory address for new node instance.
-    struct Node* node_address = (struct Node*)malloc(sizeof(struct Node));
+    struct Node* node_address = (struct Node*)malloc(sizeof(struct Node)) ;
     struct Node new_node;
-    new_node.data = data;
-    new_node.nextNode = NULL;
 
     // Derefeerencing the address
     *node_address = new_node;
+    nodeInit(node_address, data);
 
     return node_address;
-}
-
-void destroyNode( struct Node* node_to_destroy){
-
-    free(node_to_destroy->data);
-    free(node_to_destroy);
 }
 
 struct Node* iter(int index, struct LinkedList* linked_list){

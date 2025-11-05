@@ -1,4 +1,3 @@
-#include <stdio.h>
 
 struct Node 
 {
@@ -7,5 +6,11 @@ struct Node
         void* data;
         struct Node* nextNode;
 
-      
 };
+
+// Initialises Node
+void nodeInit(struct Node*, void*);
+
+// Method for freeing the node and the data from memory.
+void destroyNode(struct Node*);
+

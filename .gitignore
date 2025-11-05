@@ -420,3 +420,4 @@ a.exe
 .vscode/tasks.json
 Tests/LinkedListTest.c
 Tests/LinkedListTest.h
+/Tests

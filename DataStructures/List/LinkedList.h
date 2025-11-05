@@ -12,8 +12,13 @@ struct LinkedList
     int length;
     struct Node* head;
 
+    // Method for inserting node into Linked List
     void (*insert)(void*, int, struct LinkedList*);
+
+    // Method for removing node from Linked List
     void (*removeNode)(int, struct LinkedList*);
+
+    // Method for retrieving data from linked List
     void* (*getData)(int, struct LinkedList*);
 
 };
